@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="344" height="432" viewBox="0 0 344 432">
+  <defs>
+    <pattern id="pattern" width="1" height="1" viewBox="0 26.967 344 432">
+      <image preserveAspectRatio="xMidYMid slice" width="344" height="458.667" xlink:href="inspirations1.jpg"/>
+    </pattern>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-opacity="0.4"/>
+    </linearGradient>
+  </defs>
+  <g id="Inspiration" transform="translate(-15 -870)">
+    <rect id="inspirations1" width="344" height="432" rx="8" transform="translate(15 870)" fill="url(#pattern)"/>
+    <rect id="inspirations1-2" data-name="inspirations1" width="344" height="432" rx="8" transform="translate(15 870)" fill="url(#linear-gradient)"/>
+    <g id="Ellipse_6" data-name="Ellipse 6" transform="translate(71 1162)" fill="none" stroke="#fff" stroke-width="2">
+      <circle cx="9" cy="9" r="9" stroke="none"/>
+      <circle cx="9" cy="9" r="8" fill="none"/>
+    </g>
+    <g id="Ellipse_10" data-name="Ellipse 10" transform="translate(219 1189)" fill="none" stroke="#fff" stroke-width="2">
+      <circle cx="9" cy="9" r="9" stroke="none"/>
+      <circle cx="9" cy="9" r="8" fill="none"/>
+    </g>
+    <g id="Ellipse_11" data-name="Ellipse 11" transform="translate(294 1139)" fill="none" stroke="#fff" stroke-width="2">
+      <circle cx="9" cy="9" r="9" stroke="none"/>
+      <circle cx="9" cy="9" r="8" fill="none"/>
+    </g>
+    <a href="#url">
+        <g id="Ellipse_7" data-name="Ellipse 7" transform="translate(95 950)" fill="rgba(255,255,255,0.8)" stroke="#fff" stroke-width="2">
+        <circle cx="9" cy="9" r="9" stroke="none"/>
+        <circle cx="9" cy="9" r="8" fill="none"/>
+      </g>
+    </a> 
+  </g>
+</svg>
