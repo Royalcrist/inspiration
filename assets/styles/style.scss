@@ -1,0 +1,189 @@
+/*---------------------------------------------------------
+                        General
+---------------------------------------------------------*/
+
+:root {
+    //Colors
+    --primary: black;
+    --background: white;
+    --input-back: #f2f2f2;
+    --input-border: #e4e4e4;
+
+    //Text sizes
+    --text-small: 14px;
+    --text-x-small: 12px;
+
+    //others
+    --shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    padding: 0 16px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0.5em 0;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0.5em 0;
+}
+
+input:focus,
+input:active {
+    outline: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-gap: 16px;
+}
+
+/*---------------------------------------------------------
+                        Header
+---------------------------------------------------------*/
+
+header {
+    width: 100%;
+    padding-top: 1em;
+}
+
+nav {
+    grid-column: 3 / 5;
+    grid-row: 1;
+    justify-self: end;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.icon-nav {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    text-decoration: none;
+    margin-right: 24px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.icon-user {
+    background-image: url(../static/icons/account.svg);
+}
+
+.icon-cart {
+    background-image: url(../static/icons/cart.svg);
+}
+
+.icon-more {
+    background-image: url(../static/icons/more.svg);
+}
+
+.input-search {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    font-size: var(--text-small);
+
+    input {
+        width: 100%;
+        padding: 1em 2em;
+        border: 1px solid var(--input-border);
+        border-radius: 5em;
+        background-color: var(--input-back);
+        color: rgba($color: #000000, $alpha: 0.5);
+        font-weight: 500;
+    }
+}
+
+/*---------------------------------------------------------
+                        hero
+---------------------------------------------------------*/
+
+.hero {
+    position: relative;
+    margin-top: 48px;
+    border-radius: 8px;
+
+    img {
+        width: 100%;
+    }
+
+    h2 {
+        color: white;
+        font-weight: 500;
+        position: absolute;
+        left: 16px;
+        bottom: 16px;
+        margin: 0;
+        z-index: 1;
+    }
+}
+
+/*---------------------------------------------------------
+                        Popular
+---------------------------------------------------------*/
+
+.popular {
+    margin-top: 48px;
+}
+
+.popular-container {
+    overflow-x: scroll;
+    white-space: nowrap;
+    padding: 48px 0 24px;
+}
+
+.popular-item {
+    display: inline-block;
+    box-shadow: var(--shadow);
+    margin-right: 16px;
+    border-radius: 8px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &_img {
+        height: 7em;
+
+        & img {
+            margin-top: -21%;
+        }
+    }
+
+    &_description {
+        padding: 0 16px 16px;
+
+        & span:nth-child(2) {
+            text-decoration: line-through;
+            font-size: var(--text-x-small);
+            margin-right: 0.5em;
+        }
+
+        & span:last-child {
+            font-size: var(--text-small);
+        }
+    }
+}
+
+/*---------------------------------------------------------
+                    inspirations
+---------------------------------------------------------*/
