@@ -61,6 +61,10 @@ input:active {
 header {
     width: 100%;
     padding-top: 1em;
+    position: sticky;
+    top: 0;
+    background-color: var(--background);
+    z-index: 5;
 }
 
 nav {
@@ -187,3 +191,71 @@ nav {
 /*---------------------------------------------------------
                     inspirations
 ---------------------------------------------------------*/
+
+.inspirations-categories {
+    overflow-x: scroll;
+    white-space: nowrap;
+
+    & a {
+        display: inline-block;
+        text-decoration: none;
+        color: var(--primary);
+        opacity: 0.5;
+        position: relative;
+        margin-left: 24px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        & * {
+            font-weight: 500;
+        }
+    }
+
+    & a.selected {
+        opacity: 1;
+
+        & * {
+            font-weight: 600;
+        }
+
+        &::before {
+            content: "";
+            width: 50%;
+            height: 4px;
+            position: absolute;
+            left: 0;
+            bottom: 0px;
+            background-color: black;
+            border-radius: 5px;
+        }
+    }
+}
+
+.inspiration-map {
+    width: 100%;
+}
+
+.inspirations-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+    grid-auto-flow: dense;
+}
+
+.inspirations-item {
+    position: relative;
+
+    h3 {
+        position: absolute;
+        left: 16px;
+        bottom: 16px;
+        color: white;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 4px;
+    }
+}
