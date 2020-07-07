@@ -8,7 +8,15 @@
     </form>
 
     <nav>
-        <a href="account.php" class="icon-nav icon-user"></a>
+        <a href="
+            <?php 
+                if(!empty($_SESSION['email'])) {
+                    echo 'account.php';
+                }else {
+                    echo 'login.php';
+                }
+            ?>
+            " class="icon-nav icon-user"></a>
         <a href="shopping-cart.php" class="icon-nav icon-cart"></a>
         <a href="categories.php" class="icon-nav icon-more"></a>
     </nav>
